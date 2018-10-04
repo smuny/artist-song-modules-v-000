@@ -6,6 +6,7 @@ class Song
   attr_reader :artist
   
   include Paramable
+  include Memorable::InstanceMethods
 
   @@songs = []
 
@@ -37,6 +38,6 @@ class Song
   # def to_param
   #   name.downcase.gsub(' ', '-')
   # end
-  extend Memorable
+  extend Memorable::ClassMethods
   extend Findable
 end
