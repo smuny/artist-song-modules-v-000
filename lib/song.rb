@@ -38,6 +38,6 @@ class Song
   # def to_param
   #   name.downcase.gsub(' ', '-')
   # end
-  extend Memorable::ClassMethods
+  extend Memorable
   extend Findable
 end
